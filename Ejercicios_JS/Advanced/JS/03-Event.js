@@ -14,7 +14,7 @@ window.onload = () => {
 
 
 
-// 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
+    // 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
 
     const focus = document.querySelector('.focus');
 
