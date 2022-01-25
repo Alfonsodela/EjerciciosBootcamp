@@ -6,7 +6,7 @@ window.onload = () => {
 
   //   const list = document.createElement("ul");
 
-  //   for (const country of countries) {
+  // for (const country of countries) {
   // const li = document.createElement("li");
   // li.textContent = country;
   // list.appendChild(li);
@@ -110,3 +110,10 @@ window.onload = () => {
 
   // Ver ejercicio 1.4
 };
+
+const datos = async () => {
+  await fetch("https://api.agify.io?name=michael")
+    .then((response) => response.json())
+    .then((myJson) => console.log(myJson));
+};
+console.log(datos());

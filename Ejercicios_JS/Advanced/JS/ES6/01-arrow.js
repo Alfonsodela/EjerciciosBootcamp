@@ -32,10 +32,10 @@
 
 // 1.3 Ejecuta esta función pasando dos parametros
 
-const myFunction = (a, b) => {
-  let sum = a + b;
-  return sum;
-};
-
-let res = myFunction(10, 5);
-console.log(res);
+// const myFunction = (a, b) => {
+//   let sum = a + b;
+//   return sum;
+// };
+// 
+// let res = myFunction(10, 5);
+// console.log(res);

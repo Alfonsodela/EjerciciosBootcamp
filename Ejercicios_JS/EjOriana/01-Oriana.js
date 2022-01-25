@@ -91,22 +91,22 @@
 // arrays, remueve valores duplicados (si hay alguno) y ordena los números en orden
 // ascendente.
 
-const arr1 = [1,2,3]
-const arr2 = [1,2,3,4,5,6]
-
-const spreadArr = [...arr1, ...arr2];
-;
-const newArr = []
-spreadArr.forEach(item => {
-    if(!newArr.includes(item)){
-        newArr.push(item)
-    }
-})
-
-newArr.sort((a,b) => {
-    return (b - a);
-})
-console.log(newArr)
+// const arr1 = [1,2,3]
+// const arr2 = [1,2,3,4,5,6]
+// 
+// const spreadArr = [...arr1, ...arr2];
+// ;
+// const newArr = []
+// spreadArr.forEach(item => {
+    // if(!newArr.includes(item)){
+        // newArr.push(item)
+    // }
+// })
+// 
+// newArr.sort((a,b) => {
+    // return (b - a);
+// })
+// console.log(newArr)
 
 
 // const joinArr = (arr1, arr2) => {

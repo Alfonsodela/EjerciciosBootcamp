@@ -85,7 +85,7 @@
 // del string y lo sume. Puedes usar este array para probar tu función:
 //
 //
-const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
+// const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 //
 
 // const calculateStringsAverage = (arr) => {
@@ -103,25 +103,26 @@ const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 // const res = calculateStringsAverage(mixedElements);
 // console.log(res);
 
-let calculateStringsAverage = (list) => {
-let sum = 0
 
-for (let i = 0; i < mixedElements.length; i++) {
-const element = mixedElements[i]
-if(typeof element === 'number') {
-sum += element
-} else if (typeof element === 'string') {
-sum += element.length
-}
-}
-return sum
-}
+// let calculateStringsAverage = (list) => {
+// let sum = 0
+// 
+// for (let i = 0; i < mixedElements.length; i++) {
+// const element = mixedElements[i]
+// if(typeof element === 'number') {
+// sum += element
+// } else if (typeof element === 'string') {
+// sum += element.length
+// }
+// }
+// return sum
+// }
+// 
+// const res = calculateStringsAverage(mixedElements);
+// console.log(res)
 
-const res = calculateStringsAverage(mixedElements);
-console.log(res)
 
-//
-//
+
 // Iteración #6: Valores únicos
 // Crea una función que reciba por parámetro un array
 // y compruebe si existen elementos duplicados, en caso
