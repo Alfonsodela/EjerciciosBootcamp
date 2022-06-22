@@ -1,0 +1,71 @@
+window.onload = () => {
+  // 1. Estructura de una Promesa (resolve, reject), (.then, .catch).
+
+  //   const addItem = (item, list) => {
+  //     const promise = new Promise((resolve, reject) => {
+  //       if (!list) {
+  //         reject("No existe el array");
+  //       } else {
+  //         list.push(item);
+  //         resolve(list);
+  //       }
+  //     });
+  //     return promise;
+  //   };
+
+  //   const list = ["Rojo", "Azul", "Verde"];
+
+  //   addItem("Amarillo", list)
+  //     .then((list) => {
+  //       console.log(`El listado final es: ${list.join(", ")}`);
+  //     })
+  //     .catch((err) => {
+  //       throw new Error(err);
+  //     });
+
+
+
+  // 2. En la API de Pokemon Utiliza Fetch para hacer una llamada a la API Pokemon y muestra por consola la respuesta.
+
+  //   const pokeapi = () => {
+  //         fetch(`https://pokeapi.co/api/v2/pokemon`)
+  //         .then((res) => res.json())
+  //         .then((res) => console.log(res))
+  //   };
+
+  //   console.log(pokeapi());
+
+  // const pokeapi = () => {
+  //     const promises = [];
+
+  //     for (let i = 1; i <= 120; i++) {
+  //         promises.push(
+  //         fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+  //         .then((res) => res.json())
+  //         .then((res) => console.log(res))
+  //         )}
+
+  //     Promise.all(promises).then(results) = () => {
+  //         console.log(results);
+  //     }
+  //   };
+
+  //   console.log(pokeapi());
+
+
+
+  // 3. En la API de Pokemon Utiliza async - await para hacer una llamada a la API Pokemon y muestra por consola la respuesta.
+
+  const detailPokeapi = async () => {
+    try {
+      const baseUrl = `https://pokeapi.co/api/v2/pokemon/`;
+      await fetch(baseUrl + input.value)
+        .then((res) => res.json())
+        .then((res) => console.log(res))
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  console.log(detailPokeapi());
+};
