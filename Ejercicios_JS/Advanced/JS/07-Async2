@@ -56,16 +56,22 @@ window.onload = () => {
 
   // 3. En la API de Pokemon Utiliza async - await para hacer una llamada a la API Pokemon y muestra por consola la respuesta.
 
-  const detailPokeapi = async () => {
-    try {
-      const baseUrl = `https://pokeapi.co/api/v2/pokemon/`;
-      await fetch(baseUrl + input.value)
-        .then((res) => res.json())
-        .then((res) => console.log(res))
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  // const detailPokeapi = async () => {
+  //   try {
+  //     const baseUrl = `https://pokeapi.co/api/v2/pokemon/`;
+  //     await fetch(baseUrl + input.value)
+  //       .then((res) => res.json())
+  //       .then((res) => console.log(res))
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
 
-  console.log(detailPokeapi());
+  // console.log(detailPokeapi());
+
+  var name = 'Pep';
+var name = 'Jose';
+var name = 'Bob';
+
+console.log(name)
 };

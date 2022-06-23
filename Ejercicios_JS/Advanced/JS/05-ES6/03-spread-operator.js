@@ -1,44 +1,41 @@
 window.onload = () => {
 
     // let xmen = ['Ciclops', 'Beast', 'Angel', 'Marvel-girl'];
-    // let newXmen = ['Wolverine', 'NightCrawler', 'Storm'];
+    // let newXmen = ['Wolverine', 'NightCrawler', 'Storm', ...xmen];
 
-    // let newBand = [...xmen, ...newXmen]
-    // console.log(newBand)
-
+    
+    // console.log(newXmen)
 
 
 // 3.1 Dado el siguiente array, crea una copia usando spread operators.
     // const pointsList = [32, 54, 21, 64, 75, 43]
-    // 
-    // const copy = [...pointsList]
+    
+    // const copy = [...pointsList];
     // console.log(copy)
 
 
-
-// 3.2 Dado el siguiente objeto, crea una copia usando spread operators.
+    // 3.2 Dado el siguiente objeto, crea una copia usando spread operators.
     // const toy = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
 
-    // const copy = {...toy}
-    // console.log(copy)
-    // 
+    // const toyCopy = {...toy}
+    // console.log(toyCopy)
 
 
 // 3.3 Dado los siguientes arrays, crea un nuevo array juntandolos usando spread operatos.
     // const pointsList = [32, 54, 21, 64, 75, 43];
-    // const pointsLis2 = [54,87,99,65,32];
+    // const pointsList2 = [54,87,99,65,32];
 
-    // const newPointsList = [...pointsList, ...pointsLis2]
-    // console.log(newPointsList)
-    
+    // const newArr = [...pointsList, ...pointsList2];
+    // console.log(newArr)
+
 
 
 // 3.4 Dado los siguientes objetos. Crea un nuevo objeto fusionando los dos con spread operators.
     // const toy = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
     // const toyUpdate = {lights: 'rgb', power: ['Volar like a dragon', 'MoonWalk']}
-    // 
-    // const newObject = {...toy, ...toyUpdate}
-    // console.log(newObject)
+    
+    // const newObj = {...toy, ...toyUpdate};
+    // console.log(newObj);
 
 
     
@@ -47,6 +44,26 @@ window.onload = () => {
     
 
 const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
+const copyColors = [...colors]
+
+copyColors.splice(1,1)
+console.log(copyColors)
+
+
+
+// var min = (list) => {
+//     return Math.min(...list)
+//  }
+ 
+//  var max = (list) => {  
+//      return Math.max(...list)
+//  }
+
+//  console.log(min([1,2,3]))
+ 
+ 
 
 };
+
+
 
