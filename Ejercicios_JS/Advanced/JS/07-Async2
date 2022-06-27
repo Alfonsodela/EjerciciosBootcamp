@@ -69,9 +69,11 @@ window.onload = () => {
 
   // console.log(detailPokeapi());
 
-  var name = 'Pep';
-var name = 'Jose';
-var name = 'Bob';
+//   var name = 'Pep';
+// var name = 'Jose';
+// var name = 'Bob';
 
-console.log(name)
+// console.log(name)
+
+
 };

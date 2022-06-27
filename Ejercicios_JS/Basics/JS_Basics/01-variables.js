@@ -46,9 +46,10 @@ console.log(z)
 
 // 1.3 Dado el siguiente javascript, imprime con un console.log la suma del precio de
 // ambos juguetes.
+
 // const toy1 = {name: 'Buss myYear', price: 19};
 // const toy2 = {name: 'Rallo mcKing', price: 29};
-// 
+// // 
 // console.log(`La suma de ambos juguetes es ${toy1.price + toy2.price}`)
 // console.log(toy1['price'] + toy2['price']);
 
@@ -62,9 +63,10 @@ console.log(z)
 // let globalBasePrice = 10000;
 // let car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
 // let car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000}
-// 
+// // 
 // globalBasePrice = 25000;
-// 
+
+
 // car1 = car1.basePrice + globalBasePrice;
 // console.log(car1)
 // 

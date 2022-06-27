@@ -43,11 +43,11 @@ window.onload = () => {
 //     pero sin editar el array inicial. De nuevo, usando spread operatos.
     
 
-const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
-const copyColors = [...colors]
+// const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
+// const copyColors = [...colors]
 
-copyColors.splice(1,1)
-console.log(copyColors)
+// copyColors.splice(1,1)
+// console.log(copyColors)
 
 
 
@@ -61,9 +61,23 @@ console.log(copyColors)
 
 //  console.log(min([1,2,3]))
  
- 
+const positiveSum = (arr) => {
+    let sum = 0;
+    arr.forEach(num => {
+      if (num > 0 ){
+         sum += num 
+        }
+  
+      })
+      return sum
+    }
+
+  
+
+  console.log(positiveSum([1,2,4,5,6,7]))
 
 };
+
 
 
 
