@@ -75,5 +75,22 @@ window.onload = () => {
 
 // console.log(name)
 
+// 4. Task
+// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+// The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+// Mind the input validation.
+
+// const sumArray = (array) => {
+  
+//   let max = Math.max.apply(Math, array);
+//   let min = Math.min.apply(Math, array)
+//   let sum = 0
+//   array.forEach(num => {
+//     sum += num
+//   })
+// return sum - max - min
+// }
+
+// console.log(sumArray([1,2,3,4,5]))
 
 };
