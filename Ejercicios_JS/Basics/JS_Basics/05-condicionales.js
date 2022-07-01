@@ -20,7 +20,7 @@ const number3 = 2;
 
 
 // if (number3*5==number1) {
-  // console.log(`${number3} por 5 es igual a ${number1}`);
+    // console.log(`${number3} por 5 es igual a ${number1}`);
 // }
 
 

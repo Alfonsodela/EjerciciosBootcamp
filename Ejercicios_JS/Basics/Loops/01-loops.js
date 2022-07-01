@@ -8,13 +8,7 @@
     // const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket',
     // 'Cinrurón de Orión', 'AC/DC Camiseta']
 
-    // products.forEach(element => {
-    // if(element.includes('Camiseta')){
-    // console.log(element)
-    // }
-    // });
-    // }
-
+    
 
 
     // Iteración #2: Condicionales avanzados
@@ -32,12 +26,7 @@
         // { name: 'Raquel Benito', T1: true, T2: true, T3: true }
     // ]
 
-    // alumns.forEach(alumno => {
-
-        // ((alumno.T1 + alumno.T2 + alumno.T3)>= 2) ? alumno.isApproved = true : alumno.isApproved = false;
-        // console.log(alumno)
-    // });
-// }
+    
 
 
     // Iteración #3: Probando For...of
@@ -48,10 +37,7 @@
 
     // const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-    // for (const place of placesToTravel) {
-        // console.log(place)
-        // }
-    // }
+    
 
 
 
@@ -67,15 +53,7 @@
     // weight: '259kg'
     // }
 
-    // for(const keys in alien){
-        // console.log(keys)
-    // }
-
-    // for(const values in alien){
-        // const element = alien[values]
-        // console.log(element)
-        // }
-    // }
+   
 
 
 
@@ -90,14 +68,7 @@
     // { id: 23, name: 'Murcia' }, { id: 40, name: 'Santander' }, { id: 44, name: 'Filipinas' },
     // { id: 59, name: 'Madagascar' }]
 // 
-    // for (let i = 0; i < placesToTravel.length; i++) {
-        // const element = placesToTravel[i];
-        // if(element.id == 11 || element.id == 40){
-            // delete placesToTravel[i]
-            // console.log(placesToTravel)
-        // }
-    // }
-// }
+    
 
 
 
@@ -115,31 +86,7 @@
         // { id: 40, name: 'El gato felix' }
     // ]
 
-    // for (const toy of toys) {
-        // if (toy.name.includes("gato")) {
-        //   toys.splice(toys.indexOf(toy));
-        // }
-    //   }
-    //   console.log(toys);
-    //   
-
-    // const deleteToys = []
-
-    // for(const toy of toys){
-        // if(toy.name.includes('gato')){
-            // deleteToys.push(toy)
-        // }
-    // }
-    // console.log(deleteToys)
-
-    // for (let i = 0; i < toys.length; i++) {
-        // const toy = toys[i];
-        // if(toys.includes('gato')){
-            // delete toys(i)
-            // console.log(toys)
-        // }
-    //  }
-//  }
+    
 
 
 // 
@@ -159,11 +106,5 @@
         // { id: 40, name: 'El gato felix', sellCount: 35 }
     // ]
 
-    // for(const toy of toys) {
-        // if(toy.sellCount > 15){
-            // popularToys.push(toy)
-        // }
-    // }
-    // console.log(popularToys)
-
+   
 // }
