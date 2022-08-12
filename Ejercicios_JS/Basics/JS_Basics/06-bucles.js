@@ -17,11 +17,12 @@ window.onload = () => {
   // Muestra por consola un mensaje diciendo 'Intentando dormir' en cada vuelta del bucle
   // y cambia el mensaje en la última vuelta a 'Dormido!'.
 
-  for ( let i = 0; i < 10; i++) {
-    if (i < 10 ) {
-      console.log('Intentando dormir')
-    } else {
-      console.log('Dormido')
+  for (let i = 0; i <= 10; i++) {
+    if (i <= 9) {
+      console.log('Intentando dormir');
+    }
+    else {
+      console.log('Dormido');
     }
   }
 
