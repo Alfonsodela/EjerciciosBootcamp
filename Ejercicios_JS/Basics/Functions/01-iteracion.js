@@ -175,19 +175,19 @@ const nameFinder = ['Peter','Steve','Tony','Natasha','Clint','Logan','Xabier','B
 // let res = matchValor(nameFinder)
 // console.log(res)
 
-const arr = () => {
-  nameFinder.forEach(item => {
-    if(item.includes('Peter')) {
-      console.log('true')
-    } else {
-      console.log('false')
-    }
-  })
-  return
-}
+// const arr = () => {
+//   nameFinder.forEach(item => {
+//     if(item.includes('Peter')) {
+//       console.log('true')
+//     } else {
+//       console.log('false')
+//     }
+//   })
+//   return
+// }
 
-const res = arr(nameFinder)
-console.log(res)
+// const res = arr(nameFinder)
+// console.log(res)
 
 
 // **Iteration #8: Contador de repeticiones**

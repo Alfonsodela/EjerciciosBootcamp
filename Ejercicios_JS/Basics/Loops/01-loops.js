@@ -8,11 +8,11 @@ window.onload = () => {
     // const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket',
     // 'Cinrurón de Orión', 'AC/DC Camiseta']
 
-        // products.forEach(item => {
-    //     if (item.includes('Camiseta'))
-    //     console.log(item)
+    // products.forEach(item => {
+    //     if(item.includes('Camiseta')) {
+    //         console.log(item)
+    //     }
     // })
-
 
     // Iteración #2: Condicionales avanzados
 
@@ -29,7 +29,7 @@ window.onload = () => {
     //     { name: 'Raquel Benito', T1: true, T2: true, T3: true }
     // ]
 
-    
+   
     // alumns.forEach(item => {
     //    if ((item.T1 + item.T2 + item.T3)>=2) {
     //     item.isApproved = true
@@ -55,10 +55,9 @@ window.onload = () => {
 
     // const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-    // for ( const place of placesToTravel) {
-        // console.log(place)
-    // }
-    
+    // for (const place of placesToTravel)
+    // console.log(place)
+   
 
     // Iteración #4: Probando For...in
 
@@ -72,9 +71,8 @@ window.onload = () => {
     // weight: '259kg'
     // }
 
-    // for (const properties in alien) {
-    //     console.log(alien[properties])
-    // }
+    // for (const property in alien)
+    // console.log(alien)
 
     
     // Iteración #5: Probando For
@@ -88,12 +86,12 @@ window.onload = () => {
     // { id: 23, name: 'Murcia' }, { id: 40, name: 'Santander' }, { id: 44, name: 'Filipinas' },
     // { id: 59, name: 'Madagascar' }]
 
-   //     placesToTravel.forEach(place => {
-//         if (place.id == 11 || place.id == 40) {
-//             delete place  
-//             console.log(place)        
-//         }
-//     })
+    //    placesToTravel.forEach(place => {
+    //     if (place.id == 11 || place.id == 40) {
+    //         delete place  
+    //         console.log(placesToTravel)        
+    //     }
+    // })
 
 
     //Iteración #6: Mixed For...of e includes
@@ -110,37 +108,35 @@ window.onload = () => {
     //     { id: 40, name: 'El gato felix' }
     // ]
 
-        // for ( const toy of toys) {
-    //     if (toy.name.includes('gato')) {
-    //         toys.splice(toys.indexOf(toy))           
+    // for (const toy of toys) {
+    //     if(toy.name.includes('gato')) {
+    //         toys.splice(toys.indexOf(toy))
+    //         console.log(toys)
     //     }
-    //     console.log(toys)
     // }
 
-
-// 
+    
     //Iteración #7: For...of avanzado**
 
     // Usa un bucle **for...of** para recorrer todos los juguetes y añade los que 
     // tengan más de 15 ventas (sellCount) al array popularToys. Imprimelo por consola.. 
     // Puedes usar este array:
 
-    const popularToys = [];
+    // const popularToys = [];
     
-    const toys = [
-        { id: 5, name: 'Buzz MyYear', sellCount: 10 },
-        { id: 11, name: 'Action Woman', sellCount: 24 },
-        { id: 23, name: 'Barbie Man', sellCount: 15 },
-        { id: 40, name: 'El gato con Guantes', sellCount: 8 },
-        { id: 40, name: 'El gato felix', sellCount: 35 }
-    ]
+    // const toys = [
+    //     { id: 5, name: 'Buzz MyYear', sellCount: 10 },
+    //     { id: 11, name: 'Action Woman', sellCount: 24 },
+    //     { id: 23, name: 'Barbie Man', sellCount: 15 },
+    //     { id: 40, name: 'El gato con Guantes', sellCount: 8 },
+    //     { id: 40, name: 'El gato felix', sellCount: 35 }
+    // ]
 
-    for (const toy of toys) {
-       if (toy.sellCount > 15) {
-        popularToys.push(toy)
-       }
-       console.log(popularToys)
-    }
-
+    // for ( const toy of toys) {
+    //     if (toy.sellCount > 15) {
+    //         popularToys.push(toy)
+    //     }
+    // }
+    // console.log(popularToys)
    
 }
