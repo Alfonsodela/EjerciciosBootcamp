@@ -10,18 +10,20 @@ window.onload = () => {
 
   // 2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
 
-  const p = document.createElement('p')
-  const emptyDiv = document.querySelector('h2')
-  emptyDiv.appendChild(p)
-  p.textContent = 'p';
+  // const p = document.createElement('p')
+  // const emptyDiv = document.querySelector('h2')
+  // emptyDiv.appendChild(p)
+  // p.textContent = 'p';
 
 
   // 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
 
+
   // for (let i = 0; i < 6; i++) {
-  //   const p6 = document.createElement("p");
-  //   emptyDiv.appendChild(p6);
-  //   // console.log(emptyDiv);
+  //   const p = document.createElement('p')
+  //   const emptyDiv = document.getElementById('prueba')
+  //   emptyDiv.appendChild(p)
+  //   p.textContent = 'hora del café'
   // }
 
 
@@ -37,58 +39,65 @@ window.onload = () => {
 
   // 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 
+  // const div = document.createElement('div')
   // const wubba = document.querySelector(".fn-insert-here");
-  // wubba.textContent = "Wubba Lubba dub dub";
-  // // console.log(document.querySelector('.fn-insert-here'));
+  // wubba.appendChild(div)
+  // div.textContent = "Wubba Lubba dub dub";
+  // // // console.log(document.querySelector('.fn-insert-here'));
 
 
 
   // 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
   // const apps = ["Facebook", "Netflix", "Instagram", "Snapchat", "Twitter"];
 
-  // const ul = document.createElement("ul");
-  // emptyDiv.appendChild(ul);
+  // const ul = document.createElement('ul')
+  // const h2Select = document.getElementById('prueba')
+  // h2Select.appendChild(ul)
 
-  // apps.forEach((item) => {
-  //   const li = document.createElement("li");
-  //   li.textContent = item;
-  //   ul.appendChild(li);
-  // });
 
-  // console.log(emptyDiv);
-
+  // apps.forEach(item => {
+  //   const li = document.createElement('li')
+  //   const ulSelect = document.querySelector('ul')
+  //   ulSelect.appendChild(li)
+  //   li.textContent = item
+  // })
 
 
   // 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
 
-  // const eliminame = document.querySelectorAll(".fn-remove-me");
-
-  // eliminame.forEach((item) => {
-  //   item.remove();
-  // });
-
+  // const removeNodes = document.querySelectorAll('.fn-remove-me')
+  // removeNodes.forEach(item => {
+  //   item.remove()
+  // })
 
   
+
   // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div.
   // Recuerda que no solo puedes insertar elementos con .appendChild.
 
-  // const pDiv = document.createElement("pDiv");
-  // const div = document.querySelectorAll("div");
-  // // div.appendChild(pDiv)
-  // document.body.insertBefore(pDiv, div[1]);
-  // pDiv.textContent = "Voy en medio";
-  // console.log(div);
+  // const p = document.createElement('p')
+  // const div = document.querySelectorAll('div')
+  // p.textContent = 'Voy en medio!'
 
+  // const insertP = document.body.insertBefore(p, div[1])
 
+  
 
   // 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
 
-  // const pLocation = document.querySelectorAll("div.fn-insert-here");
+  // const allDiv = document.querySelectorAll('div.fn-insert-here')
+  // allDiv.forEach(item => {
+  //   const p = document.createElement('p')
+  //   p.textContent = 'Voy dentro!'
+  //   item.appendChild(p)
+  // })
 
-  // pLocation.forEach((item) => {
-  //   const paragrahp = document.createElement("paragrahp");
-  //   paragrahp.textContent = "Voy dentro";
-  //   item.appendChild(paragrahp);
-  // });
+
+ 
 
 };
+
+
+ 
+
+
