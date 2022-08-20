@@ -2,20 +2,27 @@ window.onload = () => {
   // 1.1 Basandote en el array siguiente, crea una lista ul > li
   // dinámicamente en el html que imprima cada uno de los paises.
 
-  //   const countries = ["Japón", "Nicaragua", "Suiza", "Australia", "Venezuela"];
+    // const countries = ["Japón", "Nicaragua", "Suiza", "Australia", "Venezuela"];
 
-  //   const list = document.createElement("ul");
+    // const ul = document.createElement('ul')
+    // const appendUl = document.getElementById('prueba')
+    // appendUl.appendChild(ul)
 
-  // for (const country of countries) {
-  // const li = document.createElement("li");
-  // li.textContent = country;
-  // list.appendChild(li);
-  //   }
+    // countries.forEach(item => {
+    //   const li = document.createElement('li')
+    //   const appendLi = document.querySelector('ul')
+    //   appendLi.appendChild(li)
+    //   li.textContent = item
+    // })
 
-  //   document.body.appendChild(list);
-  //   console.log(body);
 
   // 1.2 Elimina el elemento que tenga la clase .fn-remove-me.
+
+    const removeElement = document.querySelectorAll('.fn-remove-me')
+    removeElement.forEach(item => {
+      item.remove()
+    })
+  
 
   // const removeElement = document.querySelector('.fn-remove-me');
   // removeElement.remove();
@@ -39,13 +46,13 @@ window.onload = () => {
   // 1.4 Crea dinamicamente en el html una lista de div que contenga un elemento
   // h4 para el titulo y otro elemento img para la imagen.
 
-  const countries = [
-    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=1" },
-    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=2" },
-    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=3" },
-    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=4" },
-    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=5" },
-  ];
+  // const countries = [
+  //   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=1" },
+  //   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=2" },
+  //   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=3" },
+  //   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=4" },
+  //   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=5" },
+  // ];
 
   // const bodyLocation = document.querySelector('body');
   // for (const country of countries) {
@@ -61,20 +68,20 @@ window.onload = () => {
   // img.textContent = country.imgUrl;
   // }
 
-  for (const country of countries) {
-    let countryItem = document.createElement("div");
-    countryItem.innerHTML = `<h4>${country.title}</h4><img src=${country.imgUrl}/>`;
+  // for (const country of countries) {
+  //   let countryItem = document.createElement("div");
+  //   countryItem.innerHTML = `<h4>${country.title}</h4><img src=${country.imgUrl}/>`;
 
-    let botonBorrar = document.createElement("button");
-    botonBorrar.textContent = "Eliminar elemento";
-    countryItem.appendChild(botonBorrar);
+  //   let botonBorrar = document.createElement("button");
+  //   botonBorrar.textContent = "Eliminar elemento";
+  //   countryItem.appendChild(botonBorrar);
 
-    botonBorrar.addEventListener("click", () => {
-      countryItem.remove();
-    });
+  //   botonBorrar.addEventListener("click", () => {
+  //     countryItem.remove();
+  //   });
 
-    document.body.appendChild(countryItem);
-  }
+  //   document.body.appendChild(countryItem);
+  // }
 
   // 1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último
   // elemento de la lista.
@@ -99,21 +106,21 @@ window.onload = () => {
     // selectDivs[4].remove();
   // });
 
-  const myButton = document.getElementById('delete-last-element');
-  myButton.addEventListener('click', (e) => {
-  let selectDivs = document.querySelectorAll('div');
-  selectDivs[selectDivs.length -1].remove();
-  })
+  // const myButton = document.getElementById('delete-last-element');
+  // myButton.addEventListener('click', (e) => {
+  // let selectDivs = document.querySelectorAll('div');
+  // selectDivs[selectDivs.length -1].remove();
+  // })
 
   // 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los
   // elementos de las listas que elimine ese mismo elemento del html.
 
   // Ver ejercicio 1.4
-};
+// };
 
-const datos = async () => {
-  await fetch("https://api.agify.io?name=michael")
-    .then((response) => response.json())
-    .then((myJson) => console.log(myJson));
+// const datos = async () => {
+//   await fetch("https://api.agify.io?name=michael")
+//     .then((response) => response.json())
+//     .then((myJson) => console.log(myJson));
 };
-console.log(datos());
+// console.log(datos());
