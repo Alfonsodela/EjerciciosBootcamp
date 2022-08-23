@@ -16,12 +16,12 @@ window.onload = () => {
     // del objeto usando object destructuring e imprimelas por consola. Cuidado, 
     // no hace falta hacer destructuring del array, solo del objeto.
 
-    // const game = { title: 'The last us 2', gender: ['action', 'zombie', 'survival'], y
+    // const game = { title: 'The last us 2', gender: ['action', 'zombie', 'survival']}
 
-    // let { title, gender, year } = game
-    // console.log(title, gender, year)
+    // let { title, gender } = game;
+    // console.log(`Este juego se llama ${title} y es de género ${gender[0]}`)
 
-
+   
 
     // 2.2 En base al siguiente javascript, usa destructuring para crear 3 variables 
     // llamadas fruit1, fruit2 y fruit3, con los valores del array. Posteriormente
@@ -29,8 +29,9 @@ window.onload = () => {
 
     //    const fruits = ['Banana', 'Strawberry', 'Orange'];
 
+    //    const [fruit1, fruit2, fruit3] = fruits
 
-
+    //    console.log(fruit1, fruit2, fruit3)
 
 
 
@@ -38,8 +39,11 @@ window.onload = () => {
     // variables igualandolo a la función e imprimiendolo por consola.
 
     // const animalFunction = () => {
-        // return { name: 'Bengal Tiger', race: 'Tiger' }
+    //     return { name: 'Bengal Tiger', race: 'Tiger' }
     // };
+
+    // const { name, race } = animalFunction()
+    // console.log(name, race)
 
 
 
@@ -48,13 +52,14 @@ window.onload = () => {
     // 3 variables usando igualmente el destructuring para cada uno de los años 
     // y comprueba que todo esta bien imprimiendolo.
     // 
-    // const car = {name: 'Mazda 6', itv: [2015, 2011, 2020] }
+    const car = {name: 'Mazda 6', itv: [2015, 2011, 2020] }
 
-    // let {name, itv} = car;
-    // console.log(name, itv);
+    const {name, itv} = car
+    const [year1, year2, year3] = itv;
 
-    // 
+    console.log(`El coche ${name} pasó la itv en el año ${itv[0]}`)
+    console.log(year1, year2, year3);
 
-     
+   
 
 };

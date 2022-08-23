@@ -9,11 +9,11 @@ window.onload = () => {
 
 // 3.1 Dado el siguiente array, crea una copia usando spread operators.
     // const pointsList = [32, 54, 21, 64, 75, 43]
+
+    // const newArr = [...pointsList]
+    // console.log(newArr)
     
-    // const copy = [...pointsList];
-    // console.log(copy)
-
-
+    
     // 3.2 Dado el siguiente objeto, crea una copia usando spread operators.
     // const toy = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
 
@@ -42,12 +42,11 @@ window.onload = () => {
 // 3.5 Dado el siguiente array. Crear una copia de él eliminando la posición 2 
 //     pero sin editar el array inicial. De nuevo, usando spread operatos.
     
-
 // const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
-// const copyColors = [...colors]
+// const copyArr = [...colors]
 
-// copyColors.splice(1,1)
-// console.log(copyColors)
+// copyArr.splice(1, 1)
+// console.log(copyArr)
 
 
 
@@ -61,20 +60,20 @@ window.onload = () => {
 
 //  console.log(min([1,2,3]))
  
-const positiveSum = (arr) => {
-    let sum = 0;
-    arr.forEach(num => {
-      if (num > 0 ){
-         sum += num 
-        }
+// const positiveSum = (arr) => {
+//     let sum = 0;
+//     arr.forEach(num => {
+//       if (num > 0 ){
+//          sum += num 
+//         }
   
-      })
-      return sum
-    }
+//       })
+//       return sum
+//     }
 
   
 
-  console.log(positiveSum([1,2,4,5,6,7]))
+//   console.log(positiveSum([1,2,4,5,6,7]))
 
 };
 
