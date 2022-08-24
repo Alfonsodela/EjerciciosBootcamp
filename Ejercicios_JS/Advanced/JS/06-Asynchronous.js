@@ -30,21 +30,24 @@ window.onload = () => {
   const baseUrl = "https://api.nationalize.io";
 
   const writeName = async (event) => {
-  const input = document.getElementById('input');
+      const input = document.getElementById('input');
+    
+      await fetch(baseUrl + "?name=" + input.value)
+      .then((res) => res.json())
+      .then((myJson) => {
+      console.log(myJson)
+      console.log(`El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`);
+      const result = document.getElementById('result');
+      result.textContent = `El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`;
+      
+      });
+      };
+    
+      const button = document.getElementById('button');
+      button.addEventListener("click", writeName);
 
-  await fetch(baseUrl + "?name=" + input.value)
-  .then((res) => res.json())
-  .then((myJson) => {
-  console.log(myJson)
-  console.log(`El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`);
-  const result = document.getElementById('result');
-  result.textContent = `El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`;
   
-  });
-  };
-
-  const button = document.getElementById('button');
-  button.addEventListener("click", writeName);
+  
 
   //   2.3 En base al ejercicio anterior. Crea dinamicamente un elemento  por cada petición
   //   a la api que diga...'El nombre X tiene un Y porciento de ser de Z' etc etc.
@@ -82,3 +85,4 @@ window.onload = () => {
 
   // getCharacters();
 };
+

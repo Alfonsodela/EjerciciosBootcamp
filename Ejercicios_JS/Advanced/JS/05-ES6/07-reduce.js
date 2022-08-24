@@ -16,16 +16,40 @@ window.onload = () => {
         { name: 'Keanu Reeves', score: 10 }
     ];
 
-    const result = exams.reduce((acc, item) => {
-        return acc + item.score;
-    }, 0)
+    // const result = exams.reduce((acc, item) => {
+    //     debugger
+    //     return acc + item.score
+    // }, 0)
 
-    console.log(result)
+    // debugger
+
+    // console.log(result)
+
+   
 
     // 7.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los 
     // alumnos que esten aprobados usando la función .reduce().
 
+    // const isApproved = exams
+    //     .filter(item => {
+    //         return item.score >= 5
+    //     })
+    //     .reduce((acc, item) => {
+    //         debugger
+    //         return acc + item.score
+    //     }, 0)
+
+    // console.log(isApproved)
+
 
 
     // 7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
+
+        
+    // const average = exams
+    // .reduce((acc, item) => {
+    //     return acc + item.score / exams.length
+    // }, 0)
+
+    // console.log(average)
 }

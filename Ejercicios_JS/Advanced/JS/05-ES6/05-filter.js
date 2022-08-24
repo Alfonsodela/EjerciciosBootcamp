@@ -81,12 +81,12 @@
 	// 'Rubius'. Si introduzco 'i', me deberia de mostrar el streamer 'Rubius' 
 	// e 'Ibai'.
 
-	const streamers = [
-		{ name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft' },
-		{ name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends' },
-		{ name: 'Reven', age: 43, gameMorePlayed: 'League of Legends' },
-		{ name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us' }
-	];
+	// const streamers = [
+	// 	{ name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft' },
+	// 	{ name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends' },
+	// 	{ name: 'Reven', age: 43, gameMorePlayed: 'League of Legends' },
+	// 	{ name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us' }
+	// ];
 
 	// const search = streamers.filter(item => {
 	// 	return item.name.includes('Ru')
@@ -97,16 +97,7 @@
 	// 	console.log(e.target.value)
 	// })
 
-	const word = document.getElementById("toFilterStreamers")
-	word.addEventListener('input', (streamerOk) => {
-		console.log(word.value)
-	})
-
-	const streamerOk = streamers.filter(item => {
-		return item.name === word
-		console.log(streamerOk)
-	})
-
+	
 	
 //  5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola  */ }
 //  los streamers que incluyan la palabra introducida en el input. De esta forma, si  */ }
