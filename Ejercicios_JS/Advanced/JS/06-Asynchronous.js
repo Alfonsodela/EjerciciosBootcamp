@@ -27,27 +27,25 @@ window.onload = () => {
   // fetch() para hacer una consulta a la api cuando se haga click en el botón,
   // pasando como parametro de la api, el valor del input.
 
-  const baseUrl = "https://api.nationalize.io";
+  // const baseUrl = "https://api.nationalize.io";
 
-  const writeName = async (event) => {
-      const input = document.getElementById('input');
+  // const writeName = async (event) => {
+  //     const input = document.getElementById('input');
     
-      await fetch(baseUrl + "?name=" + input.value)
-      .then((res) => res.json())
-      .then((myJson) => {
-      console.log(myJson)
-      console.log(`El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`);
-      const result = document.getElementById('result');
-      result.textContent = `El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`;
+  //     await fetch(baseUrl + "?name=" + input.value)
+  //     .then((res) => res.json())
+  //     .then((myJson) => {
+  //     console.log(myJson)
+  //     console.log(`El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`);
+  //     const result = document.getElementById('result');
+  //     result.textContent = `El nombre ${myJson.name} tiene un ${myJson.country[0].probability} de ser de ${myJson.country[0].country_id}`;
       
-      });
-      };
+  //     });
+  //     };
     
-      const button = document.getElementById('button');
-      button.addEventListener("click", writeName);
+  //     const button = document.getElementById('button');
+  //     button.addEventListener("click", writeName);
 
-  
-  
 
   //   2.3 En base al ejercicio anterior. Crea dinamicamente un elemento  por cada petición
   //   a la api que diga...'El nombre X tiene un Y porciento de ser de Z' etc etc.
@@ -61,7 +59,7 @@ window.onload = () => {
   // 2.1 Convierte la siguiente promesa para esperar a ejecutar el console usando
   // async-await.
 
-  // const runTimeOut = async () => {
+   // const runTimeOut = async () => {
     // await new Promise((resolve) => {
       // setTimeout(function () {
         // resolve();
@@ -74,8 +72,18 @@ window.onload = () => {
 
   // runTimeOut();
 
+
+
   // 2.2 Convierte la siguiente función con un fetch utilizando async-await.
   // Recuerda que para usar .fetch() tendrás que probar el ejercicio en el navegador;
+
+  const getCharacters = async () => {
+    await fetch('https://rickandmortyapi.com/api/character')
+      .then(res => res.json())
+      .then(characters => console.log(characters.results[0].name));
+  }
+
+  getCharacters();
 
   // const getCharacters = async () => {
     // await fetch("https://rickandmortyapi.com/api/character")
