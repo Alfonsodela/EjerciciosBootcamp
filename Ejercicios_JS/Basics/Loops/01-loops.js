@@ -9,9 +9,8 @@ window.onload = () => {
     // 'Cinrurón de Orión', 'AC/DC Camiseta']
 
     // products.forEach(item => {
-    //     if(item.includes('Camiseta')) {
-    //         console.log(item)
-    //     }
+    //     if(item.includes('Camiseta'))
+    //     console.log(item)
     // })
 
     // Iteración #2: Condicionales avanzados
@@ -21,31 +20,28 @@ window.onload = () => {
     // Una vez lo tengas compruébalo con un console.log.
 
 
-    // const alumns = [
-    //     { name: 'Pepe Viruela', T1: false, T2: false, T3: true },
-    //     { name: 'Lucia Aranda', T1: true, T2: false, T3: true },
-    //     { name: 'Juan Miranda', T1: false, T2: true, T3: true },
-    //     { name: 'Alfredo Blanco', T1: false, T2: false, T3: false },
-    //     { name: 'Raquel Benito', T1: true, T2: true, T3: true }
-    // ]
+    const alumns = [
+        { name: 'Pepe Viruela', T1: false, T2: false, T3: true },
+        { name: 'Lucia Aranda', T1: true, T2: false, T3: true },
+        { name: 'Juan Miranda', T1: false, T2: true, T3: true },
+        { name: 'Alfredo Blanco', T1: false, T2: false, T3: false },
+        { name: 'Raquel Benito', T1: true, T2: true, T3: true }
+    ]
 
-   
     // alumns.forEach(item => {
-    //    if ((item.T1 + item.T2 + item.T3)>=2) {
-    //     item.isApproved = true
-    //    } else {
-    //     item.isApproved = false
-    //    }
-    //    console.log(item)
+    //     if (item.T1 + item.T2 + item.T3 >= 2) {
+    //         item.isApproved = true;
+    //     } else {
+    //         item.isApproved = false
+    //     }
+    //     console.log(item)
     // })
 
-    // alumns.forEach(alumno => {
+    alumns.forEach(alumno => {
+        (alumno.T1 + alumno.T2 + alumno.T3 >=2) ? alumno.isApproved = true : alumno.isApproved = false
+        console.log(alumno)
+    })
 
-    //     ((alumno.T1 + alumno.T2 + alumno.T3)>= 2) ? alumno.isApproved = true : alumno.isApproved = false;
-    //     console.log(alumno)
-    // });
-    
-    
 
     // Iteración #3: Probando For...of
 
