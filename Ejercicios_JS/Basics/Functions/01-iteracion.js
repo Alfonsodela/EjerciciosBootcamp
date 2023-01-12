@@ -2,34 +2,38 @@
 // Completa la función que tomando dos números como argumento devuelva el más alto.
 
 // const theLargest = (num1, num2) => {
-//   return Math.max (num1, num2)
-// }
+//   return Math.max(num1, num2);
+// };
 
-// const res = theLargest(5, 9);
-// console.log(res);
-
-
-
+// console.log(theLargest(6, 2));
 
 // Iteración #2: Buscar la palabra más larga
 // Completa la función que tomando un array de strings como argumento devuelva el más largo,
 // en caso de que dos strings tenga la misma longitud deberá devolver el primero.
 // Puedes usar este array para probar tu función:
 
-// const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.']
+// const avengers = [
+//   "Hulk",
+//   "Thor",
+//   "IronMan",
+//   "Captain A.",
+//   "Spiderman",
+//   "Captain M.",
+// ];
 
 // const theLongest = () => {
-//   let avenger = '';
-//   avengers.forEach(item => {
-//     if(item.length > avenger.length) {
-//       avenger = item
+//   let avenger = "";
+//   avengers.forEach((item) => {
+//     if (item.length > avenger.length) {
+//       avenger = item;
 //     }
 //   })
-//   return avenger
-// }
+//   return avenger;
+// };
 
 // const res = theLongest(avengers);
-// console.log(res)
+// console.log(res);
+
 
 // Iteración #3: Calcular la suma
 // Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada
@@ -88,6 +92,24 @@
 //
 // const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 
+// const averageStr = () => {
+//   let sum = 0
+//   let average = 0
+//   mixedElements.forEach(item => {
+//     if( typeof item === 'number') {
+//       sum += item
+//     } else if ( typeof item === 'str') {
+//       sum += item.length
+//     }
+//   })
+//   return sum / mixedElements.length
+   
+// }
+
+// const res = averageStr(mixedElements);
+// console.log(res);
+
+
 // const averageString = () => {
 //   let sum = 0;
 //   let average = 0;
@@ -104,11 +126,9 @@
 // const res = averageString(mixedElements)
 // console.log(res)
 
-
-
 // let calculateStringsAverage = (list) => {
 // let sum = 0
-// 
+//
 // for (let i = 0; i < mixedElements.length; i++) {
 // const element = mixedElements[i]
 // if(typeof element === 'number') {
@@ -119,11 +139,9 @@
 // }
 // return sum
 // }
-// 
+//
 // const res = calculateStringsAverage(mixedElements);
 // console.log(res)
-
-
 
 // Iteración #6: Valores únicos
 // Crea una función que reciba por parámetro un array
@@ -132,8 +150,23 @@
 // elementos duplicados. Puedes usar este array para probar tu función:
 //
 //
-// const duplicates = ['sushi','pizza','burger','potatoe','pasta','ice-cream','pizza','chicken','onion rings',
-// 'pasta','soda'];
+const duplicates = ['sushi','pizza','burger','potatoe','pasta','ice-cream','pizza','chicken','onion rings',
+'pasta','soda'];
+
+const deleteDuplicate = () => {
+
+  let newArr = [];
+  duplicates.forEach(item => {
+    if( !newArr.includes(item)) {
+      newArr.push(item)
+    }
+  });
+  return newArr
+}
+
+const res = deleteDuplicate(duplicates);
+console.log(res)
+
 
 // const deleteDuplicate = () => {
 //   let withoutDuplicate = [];
@@ -141,13 +174,13 @@
 //     if(!withoutDuplicate.includes(item)){
 //       withoutDuplicate.push(item)
 //   }
-//   return withoutDuplicate
+  
 // })
+// return withoutDuplicate
 // }
 
 // let res = deleteDuplicate(duplicates)
 // console.log(res)
-
 
 // Iteración #7: Buscador de nombres
 //
@@ -157,8 +190,19 @@
 // y la posición de dicho elemento y por la contra un false.
 // Puedes usar este array para probar tu función:
 
-const nameFinder = ['Peter','Steve','Tony','Natasha','Clint','Logan','Xabier','Bruce',
-'Peggy', 'Jessica','Marc'];
+// const nameFinder = [
+//   "Peter",
+//   "Steve",
+//   "Tony",
+//   "Natasha",
+//   "Clint",
+//   "Logan",
+//   "Xabier",
+//   "Bruce",
+//   "Peggy",
+//   "Jessica",
+//   "Marc",
+// ];
 //
 // let matchValor = (list) => {
 //
@@ -188,7 +232,6 @@ const nameFinder = ['Peter','Steve','Tony','Natasha','Clint','Logan','Xabier','B
 
 // const res = arr(nameFinder)
 // console.log(res)
-
 
 // **Iteration #8: Contador de repeticiones**
 // Crea una función que nos devuelva el número de veces que se repite cada una de
