@@ -34,7 +34,6 @@
 // const res = theLongest(avengers);
 // console.log(res);
 
-
 // Iteración #3: Calcular la suma
 // Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada
 // uno de los elementos. Implemente la función denominada sumNumbers que toma un
@@ -103,12 +102,11 @@
 //     }
 //   })
 //   return sum / mixedElements.length
-   
+
 // }
 
 // const res = averageStr(mixedElements);
 // console.log(res);
-
 
 // const averageString = () => {
 //   let sum = 0;
@@ -149,24 +147,18 @@
 // que existan los elimina para retornar un array sin los
 // elementos duplicados. Puedes usar este array para probar tu función:
 //
-//
-const duplicates = ['sushi','pizza','burger','potatoe','pasta','ice-cream','pizza','chicken','onion rings',
-'pasta','soda'];
+// //
+// const duplicates = ['sushi','pizza','burger','potatoe','pasta','ice-cream','pizza','chicken','onion rings',
+// 'pasta','soda'];
 
-const deleteDuplicate = () => {
-
-  let newArr = [];
-  duplicates.forEach(item => {
-    if( !newArr.includes(item)) {
-      newArr.push(item)
-    }
-  });
-  return newArr
-}
-
-const res = deleteDuplicate(duplicates);
-console.log(res)
-
+// const deleteDuplicate = () => {
+//   let withoutDuplicate = '';
+//   duplicates.forEach(item => {
+//     if(!withoutDuplicate.includes(item)) {
+//       withoutDuplicate.push(item)
+//     }
+//   })
+// }
 
 // const deleteDuplicate = () => {
 //   let withoutDuplicate = [];
@@ -174,7 +166,7 @@ console.log(res)
 //     if(!withoutDuplicate.includes(item)){
 //       withoutDuplicate.push(item)
 //   }
-  
+
 // })
 // return withoutDuplicate
 // }
@@ -190,32 +182,48 @@ console.log(res)
 // y la posición de dicho elemento y por la contra un false.
 // Puedes usar este array para probar tu función:
 
-// const nameFinder = [
-//   "Peter",
-//   "Steve",
-//   "Tony",
-//   "Natasha",
-//   "Clint",
-//   "Logan",
-//   "Xabier",
-//   "Bruce",
-//   "Peggy",
-//   "Jessica",
-//   "Marc",
-// ];
-//
+const nameFinder = [
+  "Peter",
+  "Steve",
+  "Tony",
+  "Natasha",
+  "Clint",
+  "Logan",
+  "Xabier",
+  "Bruce",
+  "Peggy",
+  "Jessica",
+  "Marc",
+];
+
+// const match = () => {
+
+//   nameFinder.forEach(item => {
+//     if(nameFinder.indexOf('Peter')) {
+//       console.log(true)
+//     } else {
+//       console.log(false)
+//     }
+//   })
+//   return
+// }
+
+// const res = match(nameFinder);
+// console.log(res)
+
 // let matchValor = (list) => {
-//
+
 // nameFinder.forEach((item) => {
-// if(nameFinder.indexOf('Peter')){
+// if(nameFinder.includes('Marc')){
 // console.log(true)
+// console.log(nameFinder.indexOf('Marc'))
 // } else {
 // console.log(false)
 // }
 // })
 // return
 // }
-//
+
 // let res = matchValor(nameFinder)
 // console.log(res)
 
@@ -237,34 +245,30 @@ console.log(res)
 // Crea una función que nos devuelva el número de veces que se repite cada una de
 // las palabras que lo conforma.  Puedes usar este array para probar tu función:
 
-// const counterWords = [
-// 'code',
-// 'repeat',
-// 'eat',
-// 'sleep',
-// 'code',
-// 'enjoy',
-// 'sleep',
-// 'code',
-// 'enjoy',
-// 'upgrade',
-// 'code'
-// ];
-//
+const counterWords = [
+  "code",
+  "repeat",
+  "eat",
+  "sleep",
+  "code",
+  "enjoy",
+  "sleep",
+  "code",
+  "enjoy",
+  "upgrade",
+  "code",
+];
 
-// let repeatCounter = (list) => {
-//
-// let repeatWord = 0
-// counterWords.forEach((item) => {
-// if (item === 'code') {
-// repeatWord += item
-// console.log(item)
-// }
-// })
-// return repeatWord
-// }
-//
-// let res = repeatCounter(counterWords)
-// console.log(res)
+let repeatCounter = () => {
+  const count = {};
+
+  counterWords.forEach(element => {
+    count[element] = (count[element] || 0) + 1;
+  });
+  return count
+};
+
+let res = repeatCounter(counterWords);
+console.log(res);
 
 //

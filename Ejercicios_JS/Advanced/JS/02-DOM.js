@@ -1,23 +1,20 @@
 window.onload = () => {
   // 2.1 Inserta dinamicamente en un html un div vacio con javascript.
 
-  // const newDiv = document.createElement("newDiv");
-  // const emptyDiv = document.getElementById("prueba");
-  // emptyDiv.appendChild(newDiv);
-  // // console.log(emptyDiv);
-
+  // const emptyDiv = document.createElement('emptyDiv');
+  // const newDiv = document.appendChild()
 
 
   // 2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
 
-  // const p = document.createElement('p')
-  // const emptyDiv = document.querySelector('h2')
-  // emptyDiv.appendChild(p)
-  // p.textContent = 'p';
+  // const p = document.createElement('p');
+  // const newDiv = document.getElementById('prueba');
+  // newDiv.appendChild(p);
+  // p.textContent = 'Dinamically inserted paragraph'
+
 
 
   // 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
-
 
   // for (let i = 0; i < 6; i++) {
   //   const p = document.createElement('p')
@@ -48,19 +45,18 @@ window.onload = () => {
 
 
   // 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
-  // const apps = ["Facebook", "Netflix", "Instagram", "Snapchat", "Twitter"];
+  const apps = ["Facebook", "Netflix", "Instagram", "Snapchat", "Twitter"];
 
-  // const ul = document.createElement('ul')
-  // const h2Select = document.getElementById('prueba')
-  // h2Select.appendChild(ul)
+  const ul = document.createElement('ul')
+  const insertUl = document.getElementById('prueba');
+  insertUl.appendChild(ul)
 
-
-  // apps.forEach(item => {
-  //   const li = document.createElement('li')
-  //   const ulSelect = document.querySelector('ul')
-  //   ulSelect.appendChild(li)
-  //   li.textContent = item
-  // })
+  apps.forEach(item => {
+    const li = document.createElement('li');
+    const insertLi = document.getElementById('ul');
+    ul.appendChild(li)
+    li.textContent = item
+  })
 
 
   // 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
