@@ -9,7 +9,7 @@ window.onload = () => {
 
 // 3.1 Dado el siguiente array, crea una copia usando spread operators.
     // const pointsList = [32, 54, 21, 64, 75, 43]
-
+ 
     // const newArr = [...pointsList]
     // console.log(newArr)
     
@@ -26,7 +26,13 @@ window.onload = () => {
     // const pointsList2 = [54,87,99,65,32];
 
     // const newArr = [...pointsList, ...pointsList2];
-    // console.log(newArr)
+    // console.log(Math.max(...newArr))
+
+
+    // const maxi = (list) => {
+    //    return Math.max(...list)
+    // }
+    // console.log(maxi(newArr))
 
 
 

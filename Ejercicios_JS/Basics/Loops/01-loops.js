@@ -26,6 +26,7 @@ window.onload = () => {
     { name: "Raquel Benito", T1: true, T2: true, T3: true },
   ];
 
+  
   // alumns.forEach(item => {
   //     if (item.T1 + item.T2 + item.T3 >= 2) {
   //         item.isApproved = true;
