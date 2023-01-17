@@ -23,17 +23,15 @@ window.onload = () => {
   //       throw new Error(err);
   //     });
 
-
-
   // 2. En la API de Pokemon Utiliza Fetch para hacer una llamada a la API Pokemon y muestra por consola la respuesta.
 
-  //   const pokeapi = () => {
-  //         fetch(`https://pokeapi.co/api/v2/pokemon`)
-  //         .then((res) => res.json())
-  //         .then((res) => console.log(res))
-  //   };
+    // const pokeapi = () => {
+  //       fetch(`https://pokeapi.co/api/v2/pokemon`)
+  //       .then((res) => res.json())
+  //       .then((data) => console.log(data))
+  // };
 
-  //   console.log(pokeapi());
+  // console.log(pokeapi());
 
   // const pokeapi = () => {
   //     const promises = [];
@@ -52,8 +50,6 @@ window.onload = () => {
 
   //   console.log(pokeapi());
 
-
-
   // 3. En la API de Pokemon Utiliza async - await para hacer una llamada a la API Pokemon y muestra por consola la respuesta.
 
   // const detailPokeapi = async () => {
@@ -69,28 +65,51 @@ window.onload = () => {
 
   // console.log(detailPokeapi());
 
-//   var name = 'Pep';
-// var name = 'Jose';
-// var name = 'Bob';
 
-// console.log(name)
+  const fetchPokemonDetail = async () => {
+    const baseUrl = `https://pokeapi.co/api/v2/pokemon/`;
+    const inputValue = document.getElementById("input");
+    await fetch(baseUrl + inputValue.value)
+      .then((res) => res.json())
+      .then((data) => {
+        let pokemonDetail = {
+          id: data.id,
+          name: data.name,
+          image: data.sprites.front_default
+        };
+        displayPokemonDetail(pokemonDetail);
+      });
+  };
 
-// 4. Task
-// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
-// The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
-// Mind the input validation.
+  const displayPokemonDetail = (pokemonDetail) => {
+    const result = document.getElementById("result");
+    const pokemonHTMLDetail = `<li class="flex-item1">
+        <p class="flex-item-subtitle">Nº ${pokemonDetail.id}</p>
+        <h2 class="flex-item-title">${pokemonDetail.name}</h2>  
+        <img class="flex-item-image" src="${pokemonDetail.image}">        
+    </li>`;
+    result.innerHTML = pokemonHTMLDetail;
+  };
 
-// const sumArray = (array) => {
-  
-//   let max = Math.max.apply(Math, array);
-//   let min = Math.min.apply(Math, array)
-//   let sum = 0
-//   array.forEach(num => {
-//     sum += num
-//   })
-// return sum - max - min
-// }
+  const btn = document.getElementById("button");
+  btn.addEventListener("click", fetchPokemonDetail);
 
-// console.log(sumArray([1,2,3,4,5]))
+ 
+  // 4. Task
+  // Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+  // The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+  // Mind the input validation.
 
+  // const sumArray = (array) => {
+
+  //   let max = Math.max.apply(Math, array);
+  //   let min = Math.min.apply(Math, array)
+  //   let sum = 0
+  //   array.forEach(num => {
+  //     sum += num
+  //   })
+  // return sum - max - min
+  // }
+
+  // console.log(sumArray([1,2,3,4,5]))
 };

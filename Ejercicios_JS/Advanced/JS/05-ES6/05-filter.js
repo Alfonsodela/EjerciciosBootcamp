@@ -14,11 +14,10 @@
 // const ages = [22, 14, 24, 55, 65, 21, 12, 13, 90];
 
 // const par = ages.filter(item => {
-// return item % 2 === 0
+// 	return item % 2 === 0
 // })
+
 // console.log(par)
-
-
 
 
 // 5.3 Dado el siguiente array, utiliza .filter() para generar un nuevo array 
@@ -30,6 +29,7 @@
 // {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
 // {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 // ];
+
 
 // const streamersLeague = streamers.filter((item) => {
 //     return item.gameMorePlayed === 'League of Legends'
@@ -61,10 +61,11 @@
 	// Además, pon el valor de la propiedad .gameMorePlayed a MAYUSCULAS cuando 
 	// .age sea mayor que 35.
 
-	
-	// const legends = streamers.filter(item => item.gameMorePlayed.includes('Legends'))
+	// const legends = streamers.filter(item => {
+	// 	return item.gameMorePlayed.includes('Legends') 
+	// })
 
-	// const toUpperCase = streamers.map(item => {
+	// const ageOfLegends = streamers.filter(item => {
 	// 	if (item.age > 35) {
 	// 		item.gameMorePlayed = item.gameMorePlayed.toUpperCase()
 	// 	}
@@ -72,7 +73,7 @@
 	// })
 
 	// console.log(legends)
-	// console.log(toUpperCase)
+	// console.log(ageOfLegends)
 	
 
 	// 5.6 Dado el siguiente html y javascript, utiliza .filter() para mostrar 
@@ -89,29 +90,48 @@
 	// ];
 
 	// const search = streamers.filter(item => {
-	// 	return item.name.includes('Ru')
+	// 	return item.name.includes('i')
 	// })
-	
-	// const eventInput = document.getElementById('toFilterStreamers')
-	// eventInput.addEventListener('input', (search) => {
+
+	// const filters = document.getElementById('toFilterStreamers')
+	// filters.addEventListener('input', (search) => {
 	// 	console.log(e.target.value)
 	// })
 
+	// const handleChange = () => {
+	// 	const filteredStreamers = streamers.filter(item => {
+	// 		 item.name.toLowerCase().includes(inputValue.value.toLowerCase())
+	// 	})
+	// 	console.log(filteredStreamers)
+	// } 
 	
+	// const inputValue = document.getElementById('toFilterStreamers');
+	// inputValue.addEventListener('input', handleChange => {
+	// 	console.log(e.target.value)
+	// })
 	
 //  5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola  */ }
 //  los streamers que incluyan la palabra introducida en el input. De esta forma, si  */ }
 //  introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i',  */ }
 //  me deberia de mostrar el streamer 'Rubius' e 'Ibai'. */ }
 //  En este caso, muestra solo los streamers filtrados cuando hagamos click en el button. */ }
-//  const streamers = [ */ }
-//  {name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'}, */ }
-//  {name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'}, */ }
-//  {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'}, */ }
-//  {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'} */ }
-//  ]; 
-//  
+ const streamers = [ 
+ {name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'}, 
+ {name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'}, 
+ {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'}, 
+ {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'} 
+ ]; 
+ 
+ const handleChange = () => {
+	const inputValue = event.target.previousElementSibling;
+	const filteredStreamers = streamers.filter(item => {
+		item.name.toLowerCase().includes(inputValue.value.toLowerCase())
+	})
+	console.log(filteredStreamers)
+ }
 
+ const btn = document.getElementById('toFilterStreamers')
+ btn.addEventListener('click', handleChange);
 
 
 

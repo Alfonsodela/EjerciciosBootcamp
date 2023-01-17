@@ -3,7 +3,7 @@ window.onload = () => {
   // hacer un .fetch() y recibir los datos que devuelve. Imprimelo mediante un
   // console.log(). Para ello, es necesario que crees un .html y un .js.
 
-  // fetch("https://api.agify.io?name=michael")
+  // fetch('https://api.agify.io?name=michael')
   // .then((response) => {
   // return response.json();
   // })
@@ -23,9 +23,9 @@ window.onload = () => {
   // fetch() para hacer una consulta a la api cuando se haga click en el botón,
   // pasando como parametro de la api, el valor del input.
 
-  // const baseUrl = "https://api.nationalize.io";
+  const baseUrl = "https://api.nationalize.io";
 
-  // const writeName = async (event) => {
+    // const writeName = async (event) => {
   //     const input = document.getElementById('input');
 
   //     await fetch(baseUrl + "?name=" + input.value)
@@ -86,22 +86,22 @@ window.onload = () => {
 
   // getCharacters();
 
-  const ovejas = [
-    { name: "Noa", color: "azul" },
-    { name: "Euge", color: "rojo" },
-    { name: "Navidad", color: "rojo" },
-    { name: "Ki Na Ma", color: "rojo" },
-    { name: "AAAAAaaaaa", color: "rojo" },
-    { name: "Nnnnnnnn", color: "rojo" },
-  ];
+  // const ovejas = [
+  //   { name: "Noa", color: "azul" },
+  //   { name: "Euge", color: "rojo" },
+  //   { name: "Navidad", color: "rojo" },
+  //   { name: "Ki Na Ma", color: "rojo" },
+  //   { name: "AAAAAaaaaa", color: "rojo" },
+  //   { name: "Nnnnnnnn", color: "rojo" },
+  // ];
 
-  const contarOvejas = (ovejas) => {
-    ovejas.filter((item) => {
-      return item.color === "rojo" &&
-        item.name.toLowerCase().includes("n") &&
-        item.name.toLowerCase().includes("a");
-    });
-  };
+  // const contarOvejas = (ovejas) => {
+  //   ovejas.filter((item) => {
+  //     return item.color === "rojo" &&
+  //       item.name.toLowerCase().includes("n") &&
+  //       item.name.toLowerCase().includes("a");
+  //   });
+  // };
 
-  console.log(contarOvejas(ovejas));
+  // console.log(contarOvejas(ovejas));
 };
