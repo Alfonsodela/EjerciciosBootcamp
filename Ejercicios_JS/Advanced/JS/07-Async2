@@ -65,36 +65,66 @@ window.onload = () => {
 
   // console.log(detailPokeapi());
 
+  // const POKE_URL = `https://pokeapi.co/api/v2/pokemon/`;
 
-  const fetchPokemonDetail = async () => {
-    const baseUrl = `https://pokeapi.co/api/v2/pokemon/`;
-    const inputValue = document.getElementById("input");
-    await fetch(baseUrl + inputValue.value)
-      .then((res) => res.json())
-      .then((data) => {
-        let pokemonDetail = {
-          id: data.id,
-          name: data.name,
-          image: data.sprites.front_default
-        };
-        displayPokemonDetail(pokemonDetail);
-      });
-  };
+  // const fetchPokemonDetail = async () => {
+    
+  //   const inputValue = document.getElementById("input");
+  //   await fetch(`${POKE_URL}` + inputValue.value)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       let pokemonDetail = {
+  //         id: data.id,
+  //         name: data.name,
+  //         image: data.sprites.front_default
+  //       };
+  //       displayPokemonDetail(pokemonDetail);
+  //     });
+  // };
 
-  const displayPokemonDetail = (pokemonDetail) => {
-    const result = document.getElementById("result");
-    const pokemonHTMLDetail = `<li class="flex-item1">
-        <p class="flex-item-subtitle">Nº ${pokemonDetail.id}</p>
-        <h2 class="flex-item-title">${pokemonDetail.name}</h2>  
-        <img class="flex-item-image" src="${pokemonDetail.image}">        
-    </li>`;
-    result.innerHTML = pokemonHTMLDetail;
-  };
+  // const displayPokemonDetail = (pokemonDetail) => {
+  //   const result = document.getElementById("result");
+  //   const pokemonHTMLDetail = `<li class="flex-item1">
+  //       <p class="flex-item-subtitle">Nº ${pokemonDetail.id}</p>
+  //       <h2 class="flex-item-title">${pokemonDetail.name}</h2>  
+  //       <img class="flex-item-image" src="${pokemonDetail.image}">        
+  //   </li>`;
+  //   result.innerHTML = pokemonHTMLDetail;
+  // };
 
-  const btn = document.getElementById("button");
-  btn.addEventListener("click", fetchPokemonDetail);
+  // const btn = document.getElementById("button");
+  // btn.addEventListener("click", fetchPokemonDetail);
 
  
+// 4. Haz una llamada a la PokeApi y pagínala.
+
+const baseURL = `https://pokeapi.co/api/v2/pokemon/`;
+const endpoint = `${baseURL}?limit=20&offset=20`;
+let nextLink = '';
+let prevLink = '';
+
+
+const getPokemon = async () => {
+  await fetch(nextLink)
+    .then((res) => res.json())
+    .then((data) => {
+      
+      const nextLink = data.next;   
+      const prevLink = data.previous 
+      const result = data.results
+      console.log(nextLink) 
+      console.log(prevLink)
+      console.log(result)
+    })
+}
+
+// getPokemon(nextLink)
+
+const next = document.getElementById('next');
+next.addEventListener('click', getPokemon(nextLink))
+const prev = document.getElementById('prev');
+prev.addEventListener('click', getPokemon )
+
   // 4. Task
   // Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
   // The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
